@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Trading Zone dApp</title>
+  </head>
+  <body>
+    <h1>Safe Trading Zone dApp</h1>
+    <div>
+      <h2>Initialize Escrow</h2>
+      <input type="text" id="seller" placeholder="Seller Public Key" />
+      <input type="text" id="safeZone" placeholder="Safe Zone Public Key" />
+      <input type="text" id="notary" placeholder="Notary Public Key" />
+      <button onclick="initializeEscrow()">Initialize</button>
+    </div>
+    <div>
+      <h2>Deposit Funds</h2>
+      <input type="number" id="amount" placeholder="Amount" />
+      <button onclick="depositFunds()">Deposit</button>
+    </div>
+    <div>
+      <h2>Confirm Transaction</h2>
+      <button onclick="confirmTransaction()">Confirm</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
